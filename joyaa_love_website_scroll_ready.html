@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#541d62">
+<title>My Little Donn Joyaa 💗</title>
+<style>
+:root{--pink:#ff8fbe;--cream:#fff4fa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;min-height:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#fff;background:radial-gradient(circle at 15% 10%,#ffb7d5 0,transparent 28%),radial-gradient(circle at 85% 75%,#a68cff 0,transparent 30%),linear-gradient(135deg,#25113d,#541d62 52%,#a82e71);overflow-x:hidden}
+#sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.float{position:absolute;bottom:-55px;opacity:.75;animation:rise linear forwards;filter:drop-shadow(0 0 8px #ff9fc9)}
+@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+main{position:relative;z-index:1}
+.topbar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px;background:#2b123bd9;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff25}
+.topbar a{color:white;text-decoration:none;font-size:.88rem;font-weight:700;padding:8px 12px;border:1px solid #ffffff40;border-radius:24px}
+.topbar a:focus-visible,.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+section{width:min(760px,calc(100% - 28px));margin:22px auto;padding:clamp(25px,6vw,52px) clamp(18px,5vw,45px);text-align:center;border:1px solid #ffffff60;border-radius:28px;background:linear-gradient(145deg,#ffffff20,#ffffff0b);box-shadow:0 20px 65px #10041f45,inset 0 1px 0 #ffffff45;backdrop-filter:blur(12px);scroll-margin-top:80px}
+.hero{min-height:calc(100svh - 75px);display:flex;flex-direction:column;justify-content:center;align-items:center;margin-top:14px}
+.badge{display:inline-block;padding:8px 15px;border-radius:30px;background:#ffffff20;border:1px solid #ffffff40;font-size:.8rem;letter-spacing:1.5px}
+.heart{font-size:clamp(54px,11vw,82px);display:block;margin:15px auto 8px;animation:beat 1.2s infinite;filter:drop-shadow(0 0 18px #ff69aa}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.13)}30%{transform:scale(1)}45%{transform:scale(1.07)}}
+h1{font-size:clamp(2rem,8vw,4.2rem);line-height:1.12;margin:10px 0 15px;text-shadow:0 4px 25px #ff4f9166}
+h1 span,.name{color:#ffd1e5;text-shadow:0 0 18px #ff8abb}
+.sub{font-size:clamp(1rem,2.8vw,1.2rem);line-height:1.8;color:#ffedf6;max-width:560px;margin:0 auto}
+.divider{width:100px;height:3px;margin:23px auto;background:linear-gradient(90deg,transparent,#ffc1df,transparent);border-radius:9px}
+.message{font-size:clamp(1.1rem,3vw,1.45rem);line-height:1.8;font-weight:650;color:#fff2f8;min-height:70px}
+.btn{border:0;margin:10px 5px 0;padding:13px 20px;border-radius:40px;font-size:1rem;font-weight:750;cursor:pointer;color:#6c194f;background:linear-gradient(135deg,#fff,#ffc5df);box-shadow:0 8px 25px #ff6da655;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px #ff6da688}
+.btn.secondary{background:#ffffff18;color:white;border:1px solid #ffffff60}
+.hidden-note{display:none;margin:24px auto 0;padding:18px;border-radius:18px;background:#ffffff13;border:1px solid #ffffff35;line-height:1.9;animation:appear .6s ease}
+.hidden-note.show{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.big-quote{font-size:clamp(1.25rem,4vw,2rem);font-weight:800;line-height:1.55}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+.tile{padding:18px 12px;border-radius:20px;background:#ffffff12;border:1px solid #ffffff30;line-height:1.7}
+.tile .emoji{display:block;font-size:2rem;margin-bottom:6px}
+.footer{padding:15px 10px 30px;text-align:center;font-size:.85rem;color:#f6d9e9d9;letter-spacing:1px}
+.sparkle{display:inline-block;animation:twinkle 1.6s infinite alternate}
+@keyframes twinkle{to{opacity:.35;transform:scale(.8)}}
+#toTop{position:fixed;right:14px;bottom:16px;z-index:6;border:1px solid #ffffff55;border-radius:50%;width:46px;height:46px;background:#541d62e8;color:#fff;font-size:1.25rem;box-shadow:0 5px 20px #0004;cursor:pointer;display:none}
+#toTop.visible{display:block}
+@media(max-width:420px){.topbar{gap:5px}.topbar a{font-size:.78rem;padding:7px 10px}.tiles{grid-template-columns:1fr}section{margin:14px auto}.hero{min-height:calc(100svh - 70px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="sky" aria-hidden="true"></div>
+<nav class="topbar" aria-label="Page navigation">
+<a href="#home">🏠 Home</a><a href="#message">💌 Message</a><a href="#memories">🌸 Little reminders</a>
+</nav>
+<main>
+<section class="hero" id="home">
+<div class="badge">✨ A LITTLE SURPRISE FOR YOU ✨</div>
+<span class="heart">💗</span>
+<h1>MY LITTLE DONN<br><span>JOYAA</span> 👑</h1>
+<p class="sub">Meri pyaari chhoti bahen <strong class="name">Joyaa</strong> — bhai ki jaan, hamesha khush rehna! 🫂🧿🌷</p>
+<div class="divider"></div>
+<div class="message" id="typed" aria-live="polite">Bhai ki taraf se dher saara pyaar, meri chhoti donn! 💖🧸</div>
+<div><button class="btn" id="surprise">Tap for a little surprise 💌</button><button class="btn secondary" id="hearts">Send more hearts 💞</button></div>
+<div class="hidden-note" id="note">🌸 <strong>MY LITTLE DONN JOYAA</strong> 🌸<br>LOVE YOU MELI CHHOTI DONN! 🫂💗<br>Tu sirf meri chhoti bahen nahi, bhai ki jaan hai. Hamesha haste rehna, khush rehna aur apni cute si smile kabhi mat khona. 🧿🧸✨<br><br>Chahe kuch bhi ho, tera bhai hamesha tere saath hai. <strong>Tu bahut special hai, meri chhoti si donn! 💖</strong><br><span style="font-size:1.5rem">🌷 🫶🏻 💝 🦋 🌷</span></div>
+<p class="sub" style="margin-top:22px;font-size:.9rem">👇 Scroll down for one more little message 👇</p>
+</section>
+<section id="message">
+<div class="badge">💌 JUST FOR YOU</div>
+<div class="divider"></div>
+<div class="big-quote">LOVE YOU MELI<br><span class="name">CHHOTI DONN JOYAA</span> 🫂💗</div>
+<p class="sub">Tu hamesha khush reh, khoob smile kar aur apne saare dreams poore kar. Tera bhai hamesha tujhe support karega. 🌷🧿</p>
+<div class="divider"></div>
+<p class="message">Bhai-behen ka bond = forever wala pyaar ♾️💖</p>
+</section>
+<section id="memories">
+<div class="badge">🌸 LITTLE REMINDERS 🌸</div>
+<h2>For My Chhoti Donn 👑</h2>
+<div class="tiles">
+<div class="tile"><span class="emoji">🧸</span><strong>You're so special</strong><br>Tu meri pyaari si chhoti bahen hai. 💗</div>
+<div class="tile"><span class="emoji">🦋</span><strong>Keep shining</strong><br>Apni cute si smile hamesha rakhna. ✨</div>
+<div class="tile"><span class="emoji">🫂</span><strong>Bhai is here</strong><br>Jab bhi zaroorat ho, mujhse baat karna. ❤️</div>
+<div class="tile"><span class="emoji">🌷</span><strong>Stay happy</strong><br>Teri khushi mere liye bahut special hai. 🧿</div>
+</div>
+<button class="btn" id="endSurprise">One last hug 🤗</button>
+<div class="hidden-note" id="lastNote">BIG HUG FOR MY LITTLE DONN JOYAA! 🤗💗🌸<br>LOVE YOU FOREVER, CHHOTI BAHEN! 🫂👑🧿</div>
+</section>
+</main>
+<div class="footer"><span class="sparkle">✦</span> MADE WITH LOTS OF BROTHERLY LOVE <span class="sparkle">✦</span><br>💗 For Joyaa, from her bhai 💗</div>
+<button id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+const sky=document.getElementById('sky');const icons=['💗','💕','💖','🌸','✨','🦋','💞','🌷'];
+function floatOne(){const el=document.createElement('span');el.className='float';el.textContent=icons[Math.floor(Math.random()*icons.length)];el.style.left=Math.random()*100+'%';el.style.fontSize=(16+Math.random()*22)+'px';el.style.animationDuration=(8+Math.random()*8)+'s';sky.appendChild(el);setTimeout(()=>el.remove(),17000)}
+for(let i=0;i<18;i++)setTimeout(floatOne,i*250);setInterval(floatOne,650);
+const lines=['Bhai ki taraf se dher saara pyaar, meri chhoti donn! 💖🧸','Your smile deserves a whole sky full of stars. ✨','A little reminder: you are precious, Joyaa. 🌷','Sending you hugs, happiness, and a million hearts! 🧸💗'];let idx=0;
+document.getElementById('surprise').addEventListener('click',()=>{const note=document.getElementById('note');note.classList.toggle('show');document.getElementById('surprise').textContent=note.classList.contains('show')?'Awww, one more smile 💖':'Tap for a little surprise 💌';if(note.classList.contains('show'))note.scrollIntoView({behavior:'smooth',block:'center'});burst(18)});
+document.getElementById('hearts').addEventListener('click',()=>{idx=(idx+1)%lines.length;const typed=document.getElementById('typed');typed.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:450});typed.textContent=lines[idx];burst(24)});
+document.getElementById('endSurprise').addEventListener('click',()=>{const note=document.getElementById('lastNote');note.classList.toggle('show');if(note.classList.contains('show'))note.scrollIntoView({behavior:'smooth',block:'center'});burst(25)});
+function burst(n){for(let i=0;i<n;i++){const e=document.createElement('span');e.textContent=icons[Math.floor(Math.random()*icons.length)];e.style.cssText=`position:fixed;left:${35+Math.random()*30}%;top:${40+Math.random()*20}%;z-index:9;pointer-events:none;font-size:${18+Math.random()*22}px;transition:transform 1.2s ease,opacity 1.2s ease`;document.body.appendChild(e);requestAnimationFrame(()=>{e.style.transform=`translate(${(Math.random()-.5)*300}px,${-100-Math.random()*300}px) rotate(${Math.random()*300}deg)`;e.style.opacity='0'});setTimeout(()=>e.remove(),1300)}}
+const toTop=document.getElementById('toTop');window.addEventListener('scroll',()=>{toTop.classList.toggle('visible',window.scrollY>350)},{passive:true});toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
